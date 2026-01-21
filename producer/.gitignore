@@ -1,72 +1,33 @@
-# ====================
-# Logs
-# ====================
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-# ====================
-# Dependency directories
-# ====================
-node_modules/
-
-# ====================
-# Build output (Node.js, Frontend)
-# ====================
-dist/
-dist-ssr/
-build/
-out/
-
-# ====================
-# IntelliJ IDEA
-# ====================
-.idea/
-*.iml
-*.iws
-
-# ====================
-# Build output (Java/Maven)
-# ====================
+HELP.md
 target/
-*.class
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-# ====================
-# Local environment files
-# ====================
-*.local
-.env
-.env.*
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-# ====================
-# Ignore properties file
-# ====================
-src/main/resources/application-dev.properties
-src/main/resources/application-prod.properties
-src/main/resources/application-cloud.properties
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
-# ====================
-# Editor directories and files
-# ====================
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
 .vscode/
-!.vscode/extensions.json
-.idea/
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# ====================
-# OS generated files
-# ====================
-Thumbs.db
-Desktop.ini
-
-
-
