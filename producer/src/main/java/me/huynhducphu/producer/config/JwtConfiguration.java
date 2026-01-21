@@ -20,7 +20,7 @@ import javax.crypto.spec.SecretKeySpec;
  * Admin 8/3/2025
  **/
 @Configuration
-public class AuthConfiguration {
+public class JwtConfiguration {
 
     @Value("${app.jwt.secret}")
     private String jwtKey;

@@ -1,9 +1,6 @@
-package me.huynhducphu.ping_me.service.authentication.impl;
+package me.huynhducphu.producer.service;
 
 import lombok.RequiredArgsConstructor;
-import me.huynhducphu.ping_me.config.auth.AuthConfiguration;
-import me.huynhducphu.ping_me.model.User;
-import me.huynhducphu.ping_me.service.authentication.JwtService;
 import org.springframework.security.oauth2.jwt.*;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +12,7 @@ import java.time.temporal.ChronoUnit;
  **/
 @Service
 @RequiredArgsConstructor
-public class JwtServiceImpl implements JwtService {
+public class JwtServiceImpl {
 
     private final JwtEncoder jwtEncoder;
     private final JwtDecoder jwtDecoder;
