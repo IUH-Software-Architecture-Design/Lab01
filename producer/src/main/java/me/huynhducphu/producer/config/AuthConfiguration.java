@@ -5,8 +5,6 @@ import com.nimbusds.jose.util.Base64;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.jose.jws.MacAlgorithm;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.security.oauth2.jwt.JwtEncoder;
@@ -20,7 +18,7 @@ import javax.crypto.spec.SecretKeySpec;
  * Admin 8/3/2025
  **/
 @Configuration
-public class JwtConfiguration {
+public class AuthConfiguration {
 
     @Value("${app.jwt.secret}")
     private String jwtKey;
@@ -41,10 +39,6 @@ public class JwtConfiguration {
                 .build();
     }
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
 
     private SecretKey getSecretKey() {
         byte[] keyBytes = Base64.from(jwtKey).decode();
